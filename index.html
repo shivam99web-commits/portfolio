@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Kumar Singh – Senior UI/UX Lead & Product Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="navbar">
+    <div class="nav-float">
+      <div class="nav-links-pill">
+        <a href="index.html" class="nav-logo-pill">
+          <img src="image/logo.svg" alt="Logo" class="logo-img" />
+        </a>
+        <div class="nav-pill-divider"></div>
+        <a href="index.html" class="nav-link active">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home
+        </a>
+        <a href="works.html" class="nav-link">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          Work
+        </a>
+        <a href="about.html" class="nav-link">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          About
+        </a>
+        <a href="store.html" class="nav-link">
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Store
+        </a>
+        <a href="Shivam-Kumar-Singh-Resume.docx" class="nav-link" download>
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Download Resume
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <a href="contact.html" class="nav-contact-circle">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Menu backdrop -->
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- Menu panel -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-overlay-header">
+      <button class="menu-close" id="menuClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <nav class="menu-nav">
+      <a href="index.html" class="menu-link">Home</a>
+      <a href="works.html" class="menu-link">Work</a>
+      <a href="contact.html" class="menu-link">Contact Us</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <div class="available-badge">
+            <span class="badge-dot"></span> Available for work
+          </div>
+          <h1>Shivam<br>Singh</h1>
+          <p class="hero-desc">Senior UI/UX Lead with 10+ years delivering user-centric product design across Automotive, Healthcare, E-commerce, SaaS, and Logistics.</p>
+          <div class="hero-btns">
+            <a href="about.html" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              About Me
+            </a>
+            <a href="Shivam-Kumar-Singh-Resume.docx" class="btn btn-outline" download>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+
+          <div class="hero-awards">
+            <div class="hero-award-chip">
+              <img src="image/home-award-badge-left.svg" alt="" class="hero-chip-badge hero-chip-badge--left" />
+              <div class="hero-chip-text">
+                <strong>Above &amp; Beyond Award</strong>
+                <span>CEO Recognition, Q3 Tech</span>
+              </div>
+              <img src="image/home-award-badge-right.svg" alt="" class="hero-chip-badge hero-chip-badge--right" />
+            </div>
+            <div class="hero-award-chip">
+              <img src="image/home-award-badge-left.svg" alt="" class="hero-chip-badge hero-chip-badge--left" />
+              <div class="hero-chip-text">
+                <strong>Adani Catalyst</strong>
+                <span>Innovation Award, 2023</span>
+              </div>
+              <img src="image/home-award-badge-right.svg" alt="" class="hero-chip-badge hero-chip-badge--right" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-photo-col">
+          <img class="hero-photo" src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Shivam Kumar Singh" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── WORK ── -->
+    <section class="work section-pad" id="work">
+      <div class="container work-layout">
+
+        <div class="work-sidebar">
+          <h2 class="work-heading">My Work</h2>
+          <nav class="work-filters-v">
+            <button class="filter-link active" data-filter="all">All</button>
+            <button class="filter-link" data-filter="it">Information Technology</button>
+            <button class="filter-link" data-filter="healthcare">Healthcare</button>
+            <button class="filter-link" data-filter="retail">E-commerce</button>
+            <button class="filter-link" data-filter="automotive">Automotive</button>
+            <a href="works.html" class="filter-link filter-link--view-all">View All →</a>
+          </nav>
+        </div>
+
+        <div class="work-grid">
+          <a class="work-card" href="#" data-cat="portfolio">
+            <div class="work-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Alexander" />
+            </div>
+            <div class="work-info">
+              <span class="work-title">Alexander,</span>
+              <span class="work-cat">Portfolio Website</span>
+            </div>
+          </a>
+          <a class="work-card" href="#" data-cat="agency">
+            <div class="work-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Metric" />
+            </div>
+            <div class="work-info">
+              <span class="work-title">Metric,</span>
+              <span class="work-cat">Agency Website</span>
+            </div>
+          </a>
+          <a class="work-card" href="#" data-cat="saas">
+            <div class="work-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Proxivo" />
+            </div>
+            <div class="work-info">
+              <span class="work-title">Proxivo,</span>
+              <span class="work-cat">Saas Website</span>
+            </div>
+          </a>
+          <a class="work-card" href="#" data-cat="portfolio">
+            <div class="work-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Exposa" />
+            </div>
+            <div class="work-info">
+              <span class="work-title">Exposa,</span>
+              <span class="work-cat">Portfolio Website</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section class="services" id="services">
+
+      <div class="svc-section-heading container">
+        <h2>What I Do for You</h2>
+      </div>
+
+      <!-- Panel 001 -->
+      <div class="svc-panel">
+        <div class="svc-header container">
+          <span class="svc-num">001</span>
+          <h2 class="svc-title">Brand Design</h2>
+          <div class="svc-meta">
+            <p>Building scalable design systems and brand-consistent UI libraries that unify visual language across products.</p>
+          </div>
+        </div>
+        <div class="svc-body container">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="Brand Design" />
+          </div>
+          <ul class="svc-list">
+            <li>Brand Identity Design</li>
+            <li>Design Systems</li>
+            <li>UI Component Libraries</li>
+            <li>Visual Language Strategy</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Panel 002 -->
+      <div class="svc-panel svc-panel--alt">
+        <div class="svc-header container">
+          <span class="svc-num">002</span>
+          <h2 class="svc-title">UX Research</h2>
+          <div class="svc-meta">
+            <p>Running discovery workshops, user interviews, heuristic audits, and usability tests that cut issues by 70%.</p>
+          </div>
+        </div>
+        <div class="svc-body container">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&q=80" alt="UX Research" />
+          </div>
+          <ul class="svc-list">
+            <li>Discovery Workshops</li>
+            <li>User Interviews & Surveys</li>
+            <li>Heuristic Audits</li>
+            <li>Usability Testing</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Panel 003 -->
+      <div class="svc-panel">
+        <div class="svc-header container">
+          <span class="svc-num">003</span>
+          <h2 class="svc-title">UI/UX Design</h2>
+          <div class="svc-meta">
+            <p>End-to-end product design across B2C and SaaS — from wireframes to high-fidelity UI and developer handoff.</p>
+          </div>
+        </div>
+        <div class="svc-body container">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=600&q=80" alt="UI/UX Design" />
+          </div>
+          <ul class="svc-list">
+            <li>Wireframing & Prototyping</li>
+            <li>High-Fidelity UI Design</li>
+            <li>WCAG Accessibility</li>
+            <li>Mobile-First Responsiveness</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Panel 004 -->
+      <div class="svc-panel svc-panel--alt">
+        <div class="svc-header container">
+          <span class="svc-num">004</span>
+          <h2 class="svc-title">Frontend Dev</h2>
+          <div class="svc-meta">
+            <p>Hands-on HTML, CSS, React, Next.js, and Angular knowledge for precise implementation and friction-free handoffs.</p>
+          </div>
+        </div>
+        <div class="svc-body container">
+          <div class="svc-img">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Frontend Development" />
+          </div>
+          <ul class="svc-list">
+            <li>React & Next.js</li>
+            <li>HTML / CSS Precision</li>
+            <li>Design-to-Code Review</li>
+            <li>Performance Optimisation</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="experience section-pad" id="experience">
+      <div class="container sidebar-layout">
+        <div class="sidebar-left">
+          <div class="section-label section-label--dark">Experience</div>
+          <h2 class="sidebar-heading">My Design Journey</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-meta">
+              <span class="tl-company">Q3 Technologies</span>
+              <h3 class="tl-role">Senior Lead – UI/UX</h3>
+            </div>
+            <span class="tl-date">Dec 2023 – Present</span>
+          </div>
+          <div class="tl-item">
+            <div class="tl-meta">
+              <span class="tl-company">Adani Digital Labs</span>
+              <h3 class="tl-role">Deputy Manager – UI/UX</h3>
+            </div>
+            <span class="tl-date">Oct 2021 – Dec 2023</span>
+          </div>
+          <div class="tl-item">
+            <div class="tl-meta">
+              <span class="tl-company">Kenbox Technologies</span>
+              <h3 class="tl-role">Lead Designer – UI/UX</h3>
+            </div>
+            <span class="tl-date">Mar 2021 – Oct 2021</span>
+          </div>
+          <div class="tl-item">
+            <div class="tl-meta">
+              <span class="tl-company">Q3 Technologies</span>
+              <h3 class="tl-role">Senior Designer – UI/UX</h3>
+            </div>
+            <span class="tl-date">Nov 2018 – Mar 2021</span>
+          </div>
+          <div class="tl-item">
+            <div class="tl-meta">
+              <span class="tl-company">AMK Information Systems</span>
+              <h3 class="tl-role">Senior Designer – UI/UX</h3>
+            </div>
+            <span class="tl-date">Aug 2016 – Nov 2018</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ── -->
+    <section class="certs" id="skills">
+
+      <div class="certs-hero">
+        <img src="image/home-award-badge-left.svg" alt="" class="certs-laurel certs-laurel--left" />
+        <h2 class="certs-heading">Proven Expertise.<br>Globally Accredited.</h2>
+        <img src="image/home-award-badge-right.svg" alt="" class="certs-laurel certs-laurel--right" />
+      </div>
+
+      <div class="container certs-table">
+
+        <div class="cert-row cert-row--featured">
+          <div class="cert-row-left">
+            <span class="cert-trophy">🏅</span>
+            <span class="cert-issuer">IBM &middot; 2022</span>
+          </div>
+          <div class="cert-row-center">Enterprise Design Thinking Practitioner</div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-left">
+            <span class="cert-trophy">🏅</span>
+            <span class="cert-issuer">Skillsoft &middot; 2023</span>
+          </div>
+          <div class="cert-row-center">Expert Insights on User Research</div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-left">
+            <span class="cert-trophy">🏅</span>
+            <span class="cert-issuer">Skillsoft &middot; 2023</span>
+          </div>
+          <div class="cert-row-center">Designing with Flexibility &amp; Efficiency in Mind</div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-left">
+            <span class="cert-trophy">🏅</span>
+            <span class="cert-issuer">Skillsoft &middot; 2022</span>
+          </div>
+          <div class="cert-row-center">Design Thinking for Innovation: Stakeholder Engagement</div>
+        </div>
+
+        <div class="cert-row">
+          <div class="cert-row-left">
+            <span class="cert-trophy">🏅</span>
+            <span class="cert-issuer">Skillsoft &middot; 2023</span>
+          </div>
+          <div class="cert-row-center">Generative AI and Its Impact to Everyday Business</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── TESTIMONIALS ── -->
+    <section class="testimonials section-pad bg-alt" id="testimonials">
+      <div class="container">
+        <div class="testi-header">
+          <h2>What Clients Say</h2>
+        </div>
+        <div class="testi-wrap">
+          <button class="tnav-btn tnav-btn--prev" id="tPrev">&#8592;</button>
+          <button class="tnav-btn tnav-btn--next" id="tNext">&#8594;</button>
+          <div class="testi-viewport">
+            <div class="testi-track" id="testiTrack">
+              <div class="testi-card">
+                <div class="testi-card-inner">
+                  <p class="testi-quote">Adopting this platform has been a seamless process for our team. The system is intuitive and easy to navigate, allowing us to integrate it quickly into existing workflows.</p>
+                  <div class="testi-footer">
+                    <img src="https://framerusercontent.com/images/DGJGSiH9bggwyUxqmDiFN4RiqA.jpg?width=200&height=200" alt="John Doe" class="testi-photo" />
+                    <div class="testi-info">
+                      <h4>John Doe</h4>
+                      <span>Chief Data Scientist</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-card">
+                <div class="testi-card-inner">
+                  <p class="testi-quote">From concept to launch, designs have consistently exceeded our expectations. The ability to stay focused on user experience makes them an invaluable partner.</p>
+                  <div class="testi-footer">
+                    <img src="https://framerusercontent.com/images/gYjNG2NpreVLOuQJdLf8N9KB55M.jpg?width=200&height=200" alt="Laura Harris" class="testi-photo" />
+                    <div class="testi-info">
+                      <h4>Laura Harris</h4>
+                      <span>Product Manager</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-card">
+                <div class="testi-card-inner">
+                  <p class="testi-quote">From wireframing to the final product, every step was handled with precision. The interface design was not only beautiful but also highly functional. Highly recommend.</p>
+                  <div class="testi-footer">
+                    <img src="https://framerusercontent.com/images/tvXOaxdKige6pFCTwHjSbAfRi8.jpg?width=200&height=200" alt="John Smith" class="testi-photo" />
+                    <div class="testi-info">
+                      <h4>John Smith</h4>
+                      <span>Founder at Tech Innovator</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-card">
+                <div class="testi-card-inner">
+                  <p class="testi-quote">What sets us apart is the ability to understand client needs and turn them into innovative designs. The final outcome was perfect in every way.</p>
+                  <div class="testi-footer">
+                    <img src="https://framerusercontent.com/images/bNb6pbpU49qDPwkqghoFYz56KY.jpg?width=200&height=200" alt="Sarah Lee" class="testi-photo" />
+                    <div class="testi-info">
+                      <h4>Sarah Lee</h4>
+                      <span>Product Manager</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-card">
+                <div class="testi-card-inner">
+                  <p class="testi-quote">From the very first meeting, it was clear that this was the perfect choice for our project. Their expertise, creative vision, and dedication were evident throughout.</p>
+                  <div class="testi-footer">
+                    <img src="https://framerusercontent.com/images/wKJAmSu4QO3z6js3szLLpVzhWC4.jpg?width=200&height=200" alt="Michael Brown" class="testi-photo" />
+                    <div class="testi-info">
+                      <h4>Michael Brown</h4>
+                      <span>Creative Director</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testi-card">
+                <div class="testi-card-inner">
+                  <p class="testi-quote">Every step of the design process was a pleasure. They are incredibly talented, communicative, and dedicated to delivering the best possible results for every client.</p>
+                  <div class="testi-footer">
+                    <img src="https://framerusercontent.com/images/6qZqSttFHnjwfiICYn3bcqi8g.jpg?width=200&height=200" alt="Olivia Scott" class="testi-photo" />
+                    <div class="testi-info">
+                      <h4>Olivia Scott</h4>
+                      <span>UX Consultant</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section section-pad" id="contact">
+      <div class="cta-card cta-card--single">
+          <div class="cta-single-text">
+            <h3>Let's Design Exceptional Digital Experiences Together</h3>
+            <p class="cta-desc">We combine user research, UX strategy, and modern UI design to create intuitive, engaging, and scalable digital products. Every interface is thoughtfully crafted to deliver seamless user experiences while supporting your business goals.</p>
+            <a href="mailto:shivam99web@gmail.com" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Let's Connect
+            </a>
+          </div>
+          <div class="cta-single-image">
+            <img src="image/lead-image.webp" alt="Lead" />
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-mid">
+      <div class="footer-col">
+        <span class="footer-col-label">Contact us</span>
+        <a href="tel:+918006318818">+91 8006318818</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Follow us</span>
+        <div class="footer-socials">
+          <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://linkedin.com/in/shivam-singh-94bb2796" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Email</span>
+        <a href="mailto:shivam99web@gmail.com">shivam99web@gmail.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Shivam Kumar Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works – Shivam Kumar Singh</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="navbar">
+    <div class="nav-float">
+      <div class="nav-links-pill">
+        <a href="index.html" class="nav-logo-pill">
+          <img src="image/logo.svg" alt="Logo" class="logo-img" />
+        </a>
+        <div class="nav-pill-divider"></div>
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home
+        </a>
+        <a href="works.html" class="nav-link active">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          Work
+        </a>
+        <a href="about.html" class="nav-link">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          About
+        </a>
+        <a href="store.html" class="nav-link">
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Store
+        </a>
+        <a href="Shivam-Kumar-Singh-Resume.docx" class="nav-link" download>
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Download Resume
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <a href="contact.html" class="nav-contact-circle">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Menu backdrop -->
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- Menu panel -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-overlay-header">
+      <button class="menu-close" id="menuClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <nav class="menu-nav">
+      <a href="index.html" class="menu-link">Home</a>
+      <a href="works.html" class="menu-link">Work</a>
+      <a href="contact.html" class="menu-link">Contact Us</a>
+    </nav>
+  </div>
+
+  <main class="works-page">
+    <section class="works-section">
+      <div class="container works-layout">
+
+        <div class="works-sidebar">
+          <div class="section-label section-label--dark">Work</div>
+          <h2 class="works-heading">My Work</h2>
+          <nav class="works-filters-v">
+            <button class="filter-link" data-filter="it">Information Technology (IT)</button>
+            <button class="filter-link" data-filter="healthcare">Healthcare</button>
+            <button class="filter-link" data-filter="education">Education</button>
+            <button class="filter-link" data-filter="finance">Finance & Banking</button>
+            <button class="filter-link" data-filter="manufacturing">Manufacturing</button>
+            <button class="filter-link" data-filter="retail">Retail & E-commerce</button>
+            <button class="filter-link" data-filter="realestate">Real Estate</button>
+            <button class="filter-link" data-filter="construction">Construction</button>
+            <button class="filter-link" data-filter="hospitality">Hospitality & Tourism</button>
+            <button class="filter-link" data-filter="logistics">Transportation & Logistics</button>
+            <button class="filter-link" data-filter="telecom">Telecommunications</button>
+            <button class="filter-link" data-filter="media">Media & Entertainment</button>
+            <button class="filter-link" data-filter="automotive">Automotive</button>
+            <button class="filter-link" data-filter="energy">Energy & Utilities</button>
+            <button class="filter-link" data-filter="pharma">Pharmaceuticals</button>
+            <button class="filter-link" data-filter="food">Food & Beverage</button>
+            <button class="filter-link" data-filter="fashion">Fashion & Apparel</button>
+          </nav>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+          <a class="wk-card" href="#" data-cat="it">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Proxivo" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Proxivo,</span>
+              <span class="wk-cat">Information Technology</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="healthcare">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="MediCore" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">MediCore,</span>
+              <span class="wk-cat">Healthcare</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="education">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="EduPath" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">EduPath,</span>
+              <span class="wk-cat">Education</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="finance">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Finvex" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Finvex,</span>
+              <span class="wk-cat">Finance & Banking</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="retail">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Shoplix" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Shoplix,</span>
+              <span class="wk-cat">Retail & E-commerce</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="realestate">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Nestify" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Nestify,</span>
+              <span class="wk-cat">Real Estate</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="construction">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Buildpro" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Buildpro,</span>
+              <span class="wk-cat">Construction</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="hospitality">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Stayora" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Stayora,</span>
+              <span class="wk-cat">Hospitality & Tourism</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="logistics">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="FleetView" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">FleetView,</span>
+              <span class="wk-cat">Transportation & Logistics</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="telecom">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Signalr" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Signalr,</span>
+              <span class="wk-cat">Telecommunications</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="media">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Streamly" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Streamly,</span>
+              <span class="wk-cat">Media & Entertainment</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="automotive">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Drivex" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Drivex,</span>
+              <span class="wk-cat">Automotive</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="energy">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Voltix" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Voltix,</span>
+              <span class="wk-cat">Energy & Utilities</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="pharma">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Pharmiq" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Pharmiq,</span>
+              <span class="wk-cat">Pharmaceuticals</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="insurance">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Coverly" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Coverly,</span>
+              <span class="wk-cat">Insurance</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="food">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Bitezy" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Bitezy,</span>
+              <span class="wk-cat">Food & Beverage</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="fashion">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/xsRRkWsCogYCzMgrLZYQhvCNH3U.jpg?width=620&height=780" alt="Threadco" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Threadco,</span>
+              <span class="wk-cat">Fashion & Apparel</span>
+            </div>
+          </a>
+          <a class="wk-card" href="#" data-cat="manufacturing">
+            <div class="wk-thumb">
+              <img src="https://framerusercontent.com/images/reYtxkQ36uQt4sAZ54buppIJxU.jpg?width=600&height=400" alt="Factora" loading="lazy" />
+            </div>
+            <div class="wk-info">
+              <span class="wk-title">Factora,</span>
+              <span class="wk-cat">Manufacturing</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-mid">
+      <div class="footer-col">
+        <span class="footer-col-label">Contact us</span>
+        <a href="tel:+918006318818">+91 8006318818</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Follow us</span>
+        <div class="footer-socials">
+          <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://linkedin.com/in/shivam-singh-94bb2796" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Email</span>
+        <a href="mailto:shivam99web@gmail.com">shivam99web@gmail.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Shivam Kumar Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+    const filterBtns = document.querySelectorAll('.works-filters-v .filter-link');
+    const wkCards    = document.querySelectorAll('.wk-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        wkCards.forEach(card => {
+          const match = f === 'all' || card.dataset.cat === f;
+          card.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+          if (match) {
+            card.classList.remove('hidden');
+            card.style.display = '';
+            requestAnimationFrame(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            });
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(10px)';
+            setTimeout(() => {
+              card.classList.add('hidden');
+              card.style.display = 'none';
+            }, 260);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
